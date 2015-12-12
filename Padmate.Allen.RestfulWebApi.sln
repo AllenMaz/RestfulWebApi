@@ -1,0 +1,105 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Padmate.Allen.Models", "Padmate.Allen.Models\Padmate.Allen.Models.csproj", "{865B4DBF-0C09-45CA-9BFE-A17C97BBF00A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Padmate.Allen.Dao", "Padmate.Allen.Dao\Padmate.Allen.Dao.csproj", "{47002CC4-D82D-4EC2-9EE8-7087AA273DCD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{865B4DBF-0C09-45CA-9BFE-A17C97BBF00A} = {865B4DBF-0C09-45CA-9BFE-A17C97BBF00A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Padmate.Allen.Service", "Padmate.Allen.Service\Padmate.Allen.Service.csproj", "{C0E459A3-AEF8-43A7-AD13-4D6DF2E1AD8A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{865B4DBF-0C09-45CA-9BFE-A17C97BBF00A} = {865B4DBF-0C09-45CA-9BFE-A17C97BBF00A}
+		{47002CC4-D82D-4EC2-9EE8-7087AA273DCD} = {47002CC4-D82D-4EC2-9EE8-7087AA273DCD}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Padmate.Allen.SelfHost", "Padmate.Allen.SelfHost\Padmate.Allen.SelfHost.csproj", "{41B524BB-92A2-4A66-9D44-D1757A39D571}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Padmate.Allen.RestfulWebApi", "Padmate.Allen.RestfulWebApi\Padmate.Allen.RestfulWebApi.csproj", "{C5199E52-D4B5-4705-A786-C07EC5D04237}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Padmate.Allen.HttpClientConsole", "Padmate.Allen.HttpClientConsole\Padmate.Allen.HttpClientConsole.csproj", "{454EBAF1-D049-4EE0-A9EE-76EB97E7348E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Padmate.Allen.Controllers", "Padmate.Allen.Controllers\Padmate.Allen.Controllers.csproj", "{56349F87-0112-4E73-90B2-70A3B5DAE1A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Padmate.Allen.WebHost", "Padmate.Allen.WebHost\Padmate.Allen.WebHost.csproj", "{89199E13-7C89-45A6-A2CC-2511498045B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SQLExpress|Any CPU = SQLExpress|Any CPU
+		SQLLocal|Any CPU = SQLLocal|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{865B4DBF-0C09-45CA-9BFE-A17C97BBF00A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{865B4DBF-0C09-45CA-9BFE-A17C97BBF00A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{865B4DBF-0C09-45CA-9BFE-A17C97BBF00A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{865B4DBF-0C09-45CA-9BFE-A17C97BBF00A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{865B4DBF-0C09-45CA-9BFE-A17C97BBF00A}.SQLExpress|Any CPU.ActiveCfg = SQLExpress|Any CPU
+		{865B4DBF-0C09-45CA-9BFE-A17C97BBF00A}.SQLExpress|Any CPU.Build.0 = SQLExpress|Any CPU
+		{865B4DBF-0C09-45CA-9BFE-A17C97BBF00A}.SQLLocal|Any CPU.ActiveCfg = SQLLocal|Any CPU
+		{865B4DBF-0C09-45CA-9BFE-A17C97BBF00A}.SQLLocal|Any CPU.Build.0 = SQLLocal|Any CPU
+		{47002CC4-D82D-4EC2-9EE8-7087AA273DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47002CC4-D82D-4EC2-9EE8-7087AA273DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47002CC4-D82D-4EC2-9EE8-7087AA273DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47002CC4-D82D-4EC2-9EE8-7087AA273DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47002CC4-D82D-4EC2-9EE8-7087AA273DCD}.SQLExpress|Any CPU.ActiveCfg = SQLExpress|Any CPU
+		{47002CC4-D82D-4EC2-9EE8-7087AA273DCD}.SQLExpress|Any CPU.Build.0 = SQLExpress|Any CPU
+		{47002CC4-D82D-4EC2-9EE8-7087AA273DCD}.SQLLocal|Any CPU.ActiveCfg = SQLLocal|Any CPU
+		{47002CC4-D82D-4EC2-9EE8-7087AA273DCD}.SQLLocal|Any CPU.Build.0 = SQLLocal|Any CPU
+		{C0E459A3-AEF8-43A7-AD13-4D6DF2E1AD8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0E459A3-AEF8-43A7-AD13-4D6DF2E1AD8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0E459A3-AEF8-43A7-AD13-4D6DF2E1AD8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0E459A3-AEF8-43A7-AD13-4D6DF2E1AD8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0E459A3-AEF8-43A7-AD13-4D6DF2E1AD8A}.SQLExpress|Any CPU.ActiveCfg = SQLExpress|Any CPU
+		{C0E459A3-AEF8-43A7-AD13-4D6DF2E1AD8A}.SQLExpress|Any CPU.Build.0 = SQLExpress|Any CPU
+		{C0E459A3-AEF8-43A7-AD13-4D6DF2E1AD8A}.SQLLocal|Any CPU.ActiveCfg = SQLLocal|Any CPU
+		{C0E459A3-AEF8-43A7-AD13-4D6DF2E1AD8A}.SQLLocal|Any CPU.Build.0 = SQLLocal|Any CPU
+		{41B524BB-92A2-4A66-9D44-D1757A39D571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41B524BB-92A2-4A66-9D44-D1757A39D571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41B524BB-92A2-4A66-9D44-D1757A39D571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41B524BB-92A2-4A66-9D44-D1757A39D571}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41B524BB-92A2-4A66-9D44-D1757A39D571}.SQLExpress|Any CPU.ActiveCfg = SQLExpress|Any CPU
+		{41B524BB-92A2-4A66-9D44-D1757A39D571}.SQLExpress|Any CPU.Build.0 = SQLExpress|Any CPU
+		{41B524BB-92A2-4A66-9D44-D1757A39D571}.SQLLocal|Any CPU.ActiveCfg = SQLLocal|Any CPU
+		{41B524BB-92A2-4A66-9D44-D1757A39D571}.SQLLocal|Any CPU.Build.0 = SQLLocal|Any CPU
+		{C5199E52-D4B5-4705-A786-C07EC5D04237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5199E52-D4B5-4705-A786-C07EC5D04237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5199E52-D4B5-4705-A786-C07EC5D04237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5199E52-D4B5-4705-A786-C07EC5D04237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5199E52-D4B5-4705-A786-C07EC5D04237}.SQLExpress|Any CPU.ActiveCfg = SQLExpress|Any CPU
+		{C5199E52-D4B5-4705-A786-C07EC5D04237}.SQLExpress|Any CPU.Build.0 = SQLExpress|Any CPU
+		{C5199E52-D4B5-4705-A786-C07EC5D04237}.SQLLocal|Any CPU.ActiveCfg = SQLLocal|Any CPU
+		{C5199E52-D4B5-4705-A786-C07EC5D04237}.SQLLocal|Any CPU.Build.0 = SQLLocal|Any CPU
+		{454EBAF1-D049-4EE0-A9EE-76EB97E7348E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{454EBAF1-D049-4EE0-A9EE-76EB97E7348E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{454EBAF1-D049-4EE0-A9EE-76EB97E7348E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{454EBAF1-D049-4EE0-A9EE-76EB97E7348E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{454EBAF1-D049-4EE0-A9EE-76EB97E7348E}.SQLExpress|Any CPU.ActiveCfg = SQLExpress|Any CPU
+		{454EBAF1-D049-4EE0-A9EE-76EB97E7348E}.SQLExpress|Any CPU.Build.0 = SQLExpress|Any CPU
+		{454EBAF1-D049-4EE0-A9EE-76EB97E7348E}.SQLLocal|Any CPU.ActiveCfg = SQLLocal|Any CPU
+		{454EBAF1-D049-4EE0-A9EE-76EB97E7348E}.SQLLocal|Any CPU.Build.0 = SQLLocal|Any CPU
+		{56349F87-0112-4E73-90B2-70A3B5DAE1A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56349F87-0112-4E73-90B2-70A3B5DAE1A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56349F87-0112-4E73-90B2-70A3B5DAE1A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56349F87-0112-4E73-90B2-70A3B5DAE1A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56349F87-0112-4E73-90B2-70A3B5DAE1A4}.SQLExpress|Any CPU.ActiveCfg = SQLExpress|Any CPU
+		{56349F87-0112-4E73-90B2-70A3B5DAE1A4}.SQLExpress|Any CPU.Build.0 = SQLExpress|Any CPU
+		{56349F87-0112-4E73-90B2-70A3B5DAE1A4}.SQLLocal|Any CPU.ActiveCfg = SQLLocal|Any CPU
+		{56349F87-0112-4E73-90B2-70A3B5DAE1A4}.SQLLocal|Any CPU.Build.0 = SQLLocal|Any CPU
+		{89199E13-7C89-45A6-A2CC-2511498045B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89199E13-7C89-45A6-A2CC-2511498045B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89199E13-7C89-45A6-A2CC-2511498045B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89199E13-7C89-45A6-A2CC-2511498045B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89199E13-7C89-45A6-A2CC-2511498045B6}.SQLExpress|Any CPU.ActiveCfg = SQLExpress|Any CPU
+		{89199E13-7C89-45A6-A2CC-2511498045B6}.SQLExpress|Any CPU.Build.0 = SQLExpress|Any CPU
+		{89199E13-7C89-45A6-A2CC-2511498045B6}.SQLLocal|Any CPU.ActiveCfg = SQLLocal|Any CPU
+		{89199E13-7C89-45A6-A2CC-2511498045B6}.SQLLocal|Any CPU.Build.0 = SQLLocal|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
